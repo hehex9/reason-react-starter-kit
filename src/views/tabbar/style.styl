@@ -1,0 +1,23 @@
+@import "~style/variables.styl"
+
+.tabbar
+  position absolute
+  bottom 0
+  height 3.2rem
+  background white
+  width 100%
+  display flex
+  box-shadow 0 0 8px rgba(0,0,0,0.15)
+
+.tabbar-item
+  flex 1
+  display flex
+  justify-content center
+  align-items center
+
+  .icon
+    font-size 1.3rem
+    color $color-primary
+
+  &.tabbar-item--active .icon
+    color darken($color-primary, 35%)
